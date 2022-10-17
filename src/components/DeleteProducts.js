@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 
 import { BsFillPersonPlusFill } from "react-icons/bs";
 
-import styles from "./styles/SignUp.module.css";
+import styles from "./styles/AddProducts.module.css";
 import Container from "react-bootstrap/esm/Container";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

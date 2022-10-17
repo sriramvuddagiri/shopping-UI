@@ -71,7 +71,7 @@ function ForgotPassword() {
   return (
     <Container fluid className={styles.container}>
       <ToastContainer />
-      <Formik
+      <Formik 
         validationSchema={schema}
         initialValues={{
           userName: "",
@@ -92,14 +92,17 @@ function ForgotPassword() {
           isInValid,
           errors,
         }) => (
-          <Form
+          <Form 
             noValidate
             onSubmit={handleSubmit}
             className={styles.formContainer}
           >
+            <Row className="mb-5 text-center">
+              <h1 className="text-success border p-2 bg-white text-dark text-center">Password Reset</h1>
+            </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInEmail">
-                <Form.Label>Username(Email)</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">Username(Email)</Form.Label>
                 <Form.Control
                   type="email"
                   name="userName"
@@ -114,7 +117,7 @@ function ForgotPassword() {
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInPassword">
-                <Form.Label>New Password</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">New Password</Form.Label>
                 <Form.Control
                   type="password"
                   name="password"
@@ -130,7 +133,7 @@ function ForgotPassword() {
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInPassword1">
-                <Form.Label>ReEnter Password</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">ReEnter Password</Form.Label>
                 <Form.Control
                   type="password"
                   name="password1"
@@ -146,7 +149,7 @@ function ForgotPassword() {
             </Row>
             
             <Button type="submit" variant="success">
-              Sign Up <BsFillPersonPlusFill />
+              Reset Password <BsFillPersonPlusFill />
             </Button>
           </Form>
         )}

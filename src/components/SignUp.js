@@ -112,11 +112,11 @@ function SignUp() {
             className={styles.formContainer}
           >
             <Row className="mb-5 text-center">
-              <h1 className="text-success">Sign Up</h1>
+              <h1 className="text-success border p-2 bg-white text-danger text-center">Sign Up</h1>
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInFirstName">
-                <Form.Label>First Name</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">First Name</Form.Label>
                 <Form.Control
                   type="text"
                   name="firstname"
@@ -131,7 +131,7 @@ function SignUp() {
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInLastName">
-                <Form.Label>Last Name</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">Last Name</Form.Label>
                 <Form.Control
                   type="text"
                   name="lastname"
@@ -147,7 +147,7 @@ function SignUp() {
             
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInEmail">
-                <Form.Label>Username(Email)</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">Username(Email)</Form.Label>
                 <Form.Control
                   type="email"
                   name="username"
@@ -162,7 +162,7 @@ function SignUp() {
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInPassword">
-                <Form.Label>Password</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">Password</Form.Label>
                 <Form.Control
                   type="password"
                   name="password"
@@ -178,7 +178,7 @@ function SignUp() {
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInContactNo">
-                <Form.Label>Contact No</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">Contact No</Form.Label>
                 <Form.Control
                   type="tel"
                   name="contactNo"
@@ -194,7 +194,7 @@ function SignUp() {
             <Button type="submit" variant="success">
               Sign Up <BsFillPersonPlusFill />
             </Button>
-             <h4 className="text-warning" >Do you have already an account <Link to="/signin" className={styles.linkTextFormat} >Click Here</Link> </h4> 
+             <h4 className="text-warning" >Already have an account ? <Link to="/signin" className={styles.linkTextFormat} >SignIn Here</Link> </h4> 
                   
           </Form>
         )}

@@ -78,7 +78,7 @@ function ShoppingHome() {
             <Navbar.Collapse>
               <Nav className={styles.navContainer}>
                 <ul className="list-group">
-                <Nav.Link>
+                {/* <Nav.Link>
                   <Link to="" className="text-decoration-none">
                     <li className="list-group-item fs-5 py-3 text-primary shadow">
                       <span>
@@ -87,7 +87,7 @@ function ShoppingHome() {
                       </span>
                     </li>
                   </Link>
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link>
                   <Link to="myorders" className="text-decoration-none">
                     <li className="list-group-item fs-5 py-3 text-primary shadow">

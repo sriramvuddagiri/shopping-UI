@@ -5,6 +5,8 @@ import HomePage from "./HomePage";
 import NotFoundPage from "./NotFoundPage";
 import SignIn from "./SignIn";
 import SignInAdmin from "./SignInAdmin";
+import WelcomeAdmin from "./WelcomeAdmin";
+import WelcomeUser from "./WelcomeUser";
 import SignUp from "./SignUp";
 import UnauthorizedPage from "./UnauthorizedPage";
 import ForgotPassword from "./ForgotPassword";
@@ -27,6 +29,7 @@ function AppContainer() {
         <Route path="/forgotPassword" element={<ForgotPassword />}/>
         <Route path="/unauthorized" element={<UnauthorizedPage />} />
         <Route path="/adminhome" element={<ShoppingHomeAdmin />} >
+          <Route path="WelcomeAdmin" element={<WelcomeAdmin/>} />
           <Route path="allProducts" element={<AllProducts />} />
           <Route path="allAdminProducts" element={<AllAdminProducts />} />
           <Route path="addProducts" element={<AddProducts />} />
@@ -35,6 +38,7 @@ function AppContainer() {
         </Route>
         <Route path="/home" element={<ShoppingHome />} >
            <Route path="allProducts" element={<AllProducts />} />
+           <Route path="WelcomeUser" element={<WelcomeUser />} />
         </Route>
         
         <Route path="*" element={<NotFoundPage />} />        

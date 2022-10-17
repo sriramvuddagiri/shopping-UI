@@ -56,26 +56,38 @@ function HomePage() {
     <Container fluid>
       <Row className={styles.container}>
         <center>
-            <Row>
-              <h3 className="text-info">Welcome to FLIPZON Shopping !!</h3>
+        <Row>
+            <h1 className="text-info"></h1>
+        </Row>{" "}
+        <Row>
+              <b><i><h1 className=" border p-3 text-info bg-dark text-white text-bold">Welcome to FLIPZON Shopping Application !!</h1></i></b>
             </Row>
         </center>
           <div className={styles.colWithButtons}>
-            <fieldset class="border p-2 text-primary"> Please Sign In/ Sign Up
+            <fieldset class="border p-2  text-primary text-center text-white"> <h3 class="border p-3 bg-white text-dark"> Please Sign In/ Sign Up </h3>
               <legend class="w-auto">
                 <Row>
                   <h5 className="text-success mb-3"></h5>
                 </Row>{" "}
                 <br />
                 <Row>
-                  <Link to="/signin" className={styles.linkTextFormat}><Button variant="success" className={`${styles.btnHomePage} mb-3`}>Sign In <RiLoginBoxLine /></Button></Link>
+                  <Link to="/signin" className={styles.linkTextFormat}><Button variant="success" className={`${styles.btnHomePage} mb-3`}>Sign In<RiLoginBoxLine /></Button></Link>
                 </Row>
+                <Row>
+                  <h5 className="text-success mb-3"></h5>
+                </Row>{" "}
                 <Row>
                   <Link to="/adminsignin" className={styles.linkTextFormat}><Button variant="success" className={`${styles.btnHomePage} mb-3`}>Sign In as Admin <RiLoginBoxLine /></Button></Link>
                 </Row>
                 <Row>
+                  <h5 className="text-success mb-3"></h5>
+                </Row>{" "}
+                <Row>
                   <Link to="/signup" className={styles.linkTextFormat}><Button variant="success" className={`${styles.btnHomePage} mb-3`}>New User ? Sign Up <BsFillPersonPlusFill /></Button></Link>
                 </Row>
+                <Row>
+                  <h5 className="text-success mb-3"></h5>
+                </Row>{" "}
               </legend>
             </fieldset>
           </div>

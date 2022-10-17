@@ -47,7 +47,7 @@ function AdminSignIn() {
       localStorage.setItem("userName", response.data.username);
       localStorage.setItem("valid", response.data.valid);
       localStorage.setItem("token", response.data.token);
-      navigate("/adminhome");
+      navigate("/adminhome/welcomeadmin");
     }
   }
     catch(error){
@@ -106,11 +106,11 @@ function AdminSignIn() {
             className={styles.formContainer}
           >
             <Row className="mb-5 text-left">
-              <h1 className="text-white bg-dark">Sign In</h1>
+              <h1 className="border p-2 bg-dark text-white text-center">Admin Sign In</h1>
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInUsername">
-                <Form.Label className="text-secondary">Username</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">Username</Form.Label>
                 <Form.Control
                   type="text"
                   name="username"
@@ -125,7 +125,7 @@ function AdminSignIn() {
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInPassword">
-                <Form.Label className="text-secondary">Password</Form.Label>
+                <Form.Label className="text-secondary text-white text-bold">Password</Form.Label>
                 <Form.Control
                   type="password"
                   name="password"
